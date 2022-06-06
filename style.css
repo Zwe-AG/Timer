@@ -1,0 +1,159 @@
+body {
+  background-color: #a9ecbf;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* From uiverse.io by @alexmaracinaru */
+.card {
+  width: 300px;
+  height: 304px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  overflow: visible;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.card .item {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:hover {
+  transform: scale(0.95);
+  transition: all 0.3s;
+}
+
+.item .svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 7px;
+}
+
+.item--1 {
+  background: #c7c7ff;
+}
+
+.item--2 {
+  background: #ffd8be;
+}
+
+.item--3 {
+  background: #dce246;
+}
+
+.item--4 {
+  background: #f3bbe1;
+}
+
+.quantity {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.text--1 {
+  color: rgba(149, 149, 255, 1);
+}
+
+.text--2 {
+  color: rgba(252, 161, 71, 1);
+}
+
+.text--3 {
+  color: rgba(66, 193, 110, 1);
+}
+
+.text--4 {
+  color: rgba(220, 91, 183, 1);
+}
+
+.btnController button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 40px;
+  padding: 5px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+  margin: 20px;
+}
+
+/* .btnController button:hover {
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
+    rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transform: scale(1.01);
+} */
+
+.container1 {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#toggle {
+  -webkit-appearance: none;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 75px;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #0ba8aa 0%, #fc00ff 100%);
+  transition: 0.4s;
+  border-radius: 30px;
+  outline: none;
+}
+
+#toggle:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.dark-theme {
+  background-color: #d9afd9;
+  background-image: linear-gradient(100deg, #e872e8 0%, #72dbe7 100%);
+}
+
+.dark-theme #toggle:after {
+  background-color: transparent;
+  box-shadow: 10px 10px #15131f;
+  top: -4px;
+  left: 30px;
+}

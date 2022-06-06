@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container1">
+      <input type="checkbox" id="toggle" />
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="item item--1">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/609/609437.png"
+            class="svg"
+            alt=""
+          />
+          <span class="quantity" id="hourWatch"> 00 </span>
+          <span class="text text--1"> Hours</span>
+        </div>
+        <div class="item item--2">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/6116/6116403.png"
+            class="svg"
+            alt=""
+          />
+          <span class="quantity" id="minWatch"> 00 </span>
+          <span class="text text--2"> Minutes </span>
+        </div>
+        <div class="item item--3">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/6276/6276710.png"
+            class="svg"
+            alt=""
+          />
+          <span class="quantity" id="secondWatch"> 00 </span>
+          <span class="text text--3"> Seconds </span>
+        </div>
+        <div class="item item--4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/6783/6783749.png"
+            class="svg"
+            alt=""
+          />
+          <span class="quantity" id="millisecondsWatch"> 000</span>
+          <span class="text text--4"> Milliseconds </span>
+        </div>
+      </div>
+      <div class="btnController">
+        <button type="button" class="btn btn-primary startBtn">Start</button>
+        <button type="button" class="btn btn-primary pauseBtn">Pause</button>
+        <button type="button" class="btn btn-primary continueBtn">
+          Continue
+        </button>
+        <button type="button" class="btn btn-primary restartBtn">
+          Restart
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
